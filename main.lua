@@ -2,7 +2,7 @@ local first_number
 local second_number
 local operation
 local a, b
-local result 
+local result --let check
 local  function add(a, b)
     result = a + b
 end
