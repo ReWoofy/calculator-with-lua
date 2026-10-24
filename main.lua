@@ -4,6 +4,7 @@ local x
 local function findx(y,z,r)
     if y == 0 then
         print("you stupid? tryna expload your pc or smth??")
+        return "fuck you"
     else
         return (r - z) / y
     end
