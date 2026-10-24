@@ -5,7 +5,7 @@ local function findx(y,z,r)
     if y == 0 then
         print("you stupid? tryna expload your pc or smth??")
     else
-        x = (r - z) / y
+        return (r - z) / y
     end
     
 end
@@ -20,7 +20,7 @@ if type(a) == type(1) then
         io.write("give me c to finally do some work: ")
         c = tonumber(io.read())
         if type(c) == type(1) then
-            findx(a, b, c)
+            x = findx(a, b, c)
             print("so you wanted to find x? well for your information, if you put "..a.." as a, "..b.." as b and "..c.." as c then x would be: "..x)
         else
             print("YOU WERE DOING SO GOOD. I ALMOST FORGOT YOU ARE AN IDIOT!!!")
