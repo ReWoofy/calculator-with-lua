@@ -23,9 +23,8 @@ elseif op == "*" then
     print("Result: " .. mod.mul(tonumber(x), tonumber(y)))
 elseif op == "/" then
     local result, err = mod.div(tonumber(x), tonumber(y))
-    if op == "%" then
-        print("Result: " .. mod.mod(tonumber(x), tonumber(y)))
-    else
-        print("Result: fuck you")
-    end
+elseif op == "%" then
+    print("Result: " .. mod.mod(tonumber(x), tonumber(y)))
+else
+    print("Result: fuck you")
 end
