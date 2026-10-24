@@ -9,13 +9,13 @@ if type(x) == type(1) then
         print("chose either + x - or /")
         z = io.read()
         if z == "+" then
-            Mod.add(x, y)
+            print(Mod.add(x, y))
         elseif z == 'x' then
-            Mod.mult(x, y)
+            print(Mod.mult(x, y))
         elseif z == '-' then
-            Mod.sub(x, y)
+            print(Mod.sub(x, y))
         elseif z == "/" then
-            Mod.div(x, y)
+            print(Mod.div(x, y))
         end
     else
         print("fuck you")
