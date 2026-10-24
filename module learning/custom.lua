@@ -1,4 +1,4 @@
-Mod = {}
+local Mod = {}
 function Mod.add(a, b)
     return a + b
 end

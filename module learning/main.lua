@@ -16,6 +16,8 @@ if type(x) == type(1) then
             print(Mod.sub(x, y))
         elseif z == "/" then
             print(Mod.div(x, y))
+        else
+            print("fuck you")
         end
     else
         print("fuck you")
