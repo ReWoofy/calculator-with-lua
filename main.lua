@@ -2,18 +2,22 @@
 local a, b, c
 local x
 local function findx(y,z,r)
+    if a == 0 then
+        print("you stupid? tryna expload your pc or smth??")
+        
+    end
     x = (r - z) / y
 end
 print("welcome to x finder app!!!! fire emoji here")
 io.write("for your information so far we only have (ax +b = c) so give me a value for a: ")
-a = io.read()
+a = tonumber(io.read())
 io.write(" okay so you chose "..a)
 if type(a) == type(1) then
-    io.write("give me b now you moron: ")
-    b = io.read()
+    io.write(" give me b now you moron: ")
+    b = tonumber(io.read())
     if type(b) == type(1) then
         io.write("give me c to finally do some work: ")
-        c = io.read()
+        c = tonumber(io.read())
         if type(c) == type(1) then
             findx(a, b, c)
             print("so you wanted to find x? well for your information, if you put "..a.." as a, "..b.." as b and "..c.." as c then x would be: "..x)
