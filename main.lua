@@ -2,7 +2,7 @@
 local a, b, c
 local x
 local function findx(y,z,r)
-    if a == 0 then
+    if y == 0 then
         print("you stupid? tryna expload your pc or smth??")
     else
         x = (r - z) / y
