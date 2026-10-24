@@ -4,9 +4,10 @@ local x
 local function findx(y,z,r)
     if a == 0 then
         print("you stupid? tryna expload your pc or smth??")
-        
+    else
+        x = (r - z) / y
     end
-    x = (r - z) / y
+    
 end
 print("welcome to x finder app!!!! fire emoji here")
 io.write("for your information so far we only have (ax +b = c) so give me a value for a: ")
