@@ -7,23 +7,19 @@ if type(x) == type(1) then
     y = tonumber(io.read())
     if type(x) == type(2) then
         print("chose either + x - or /")
+        z = io.read()
+        if z == "+" then
+            Mod.add(x, y)
+        elseif z == 'x' then
+            Mod.mult(x, y)
+        elseif z == '-' then
+            Mod.sub(x, y)
+        elseif z == "/" then
+            Mod.div(x, y)
+        end
     else
         print("fuck you")
     end
 else
     print("fuck you")
 end
-print("second number")
-local y = tonumber(io.read())
-print("chose either + x - or /")
-local z = io.read()
-if z == "+" then
-    Mod.add(x, y)
-elseif z == 'x' then
-    Mod.mult(x, y)
-elseif z == '-' then
-    Mod.sub(x, y)
-elseif z == "/" then
-    Mod.div(x, y)
-end
- 
