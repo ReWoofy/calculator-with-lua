@@ -1,30 +1,29 @@
-local mod = require("custom")
-local x, y
-print("welcome to the calculator program!!! fire emoji here!!!!")
-io.write(' like always, first number: ')
-local x = io.read()
-if not tonumber(x) then
-    print("Error: Please enter a valid number.")
-    return
-end
-io.write(' second number: ')
-local y = io.read()
-if not tonumber(y) then
-    print("Error: Please enter a valid number.")
-    return
-end
-print(" good good, now select either + - * / or %")
-local op = io.read()
-if op == "+" then
-    print("Result: " .. mod.sum(tonumber(x), tonumber(y)))
-elseif op == "-" then
-    print("Result: " .. mod.sub(tonumber(x), tonumber(y)))
-elseif op == "*" then
-    print("Result: " .. mod.mul(tonumber(x), tonumber(y)))
-elseif op == "/" then
-    local result, err = mod.div(tonumber(x), tonumber(y))
-elseif op == "%" then
-    print("Result: " .. mod.mod(tonumber(x), tonumber(y)))
+local module = require('custom')
+local x, y, z
+print(" first number")
+local x = tonumber(io.read())
+if type(x) == type(1) then
+    print("second number")
+    y = tonumber(io.read())
+    if type(x) == type(2) then
+        print("chose either + x - or /")
+    else
+        print("fuck you")
+    end
 else
-    print("Result: fuck you")
+    print("fuck you")
 end
+print("second number")
+local y = tonumber(io.read())
+print("chose either + x - or /")
+local z = io.read()
+if z == "+" then
+    Mod.add(x, y)
+elseif z == 'x' then
+    Mod.mult(x, y)
+elseif z == '-' then
+    Mod.sub(x, y)
+elseif z == "/" then
+    Mod.div(x, y)
+end
+ 

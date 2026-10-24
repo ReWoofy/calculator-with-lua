@@ -1,22 +1,19 @@
 Mod = {}
-function Mod.sum(a, b)
+function Mod.add(a, b)
     return a + b
 end
 function Mod.sub(a, b)
     return a - b
 end
-function Mod.mul(a, b)
+function Mod.mult(a, b)
     return a * b
+    
 end
 function Mod.div(a, b)
     if b == 0 then
-        return nil, "Error: Division by zero"
+        return "cannot continue since b = 0"
+    else
+        return a /b
     end
-    return a / b
 end
-function Mod.mod(a, b)
-    if b == 0 then
-        return nil, "Error: Division by zero"
-    end
-    return a % b
-end
+
