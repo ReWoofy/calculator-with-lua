@@ -18,16 +18,28 @@ Mod.mul = function(x, y)
     return x * y
 end
 Mod.div = function(x, y)
-    return x / y
+    if y == 0 then
+        return "Error: Division by zero"
+    else 
+        return x / y
+    end
 end
 Mod.Modulo = function(x, y)
-    return x % y
+    if y == 0 then
+        return "Error: Division by zero"
+    else 
+        return x % y
+    end
 end
 Mod.power = function(x, y)
     return x ^ y
 end
 Mod.sqrt = function(x)
-    return math.sqrt(x)
+    if x < 0 then
+        return "Error: Cannot calculate square root of a negative number"
+    else
+        return math.sqrt(x)
+    end
 end
 Mod.roundup = function(x)
     return math.ceil(x)
