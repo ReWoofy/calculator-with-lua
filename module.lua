@@ -29,4 +29,11 @@ end
 Mod.sqrt = function(x)
     return math.sqrt(x)
 end
+Mod.roundup = function(x)
+    return math.ceil(x)
+end
+Mod.rounddown = function(x)
+    return math.floor(x)
+end
+
 return Mod
