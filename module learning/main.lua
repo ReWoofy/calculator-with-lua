@@ -1,4 +1,4 @@
-local Mod = require('custom')
+local Mod = require('module learning.custom')
 local x, y, z
 print(" first number")
 local x = tonumber(io.read())
