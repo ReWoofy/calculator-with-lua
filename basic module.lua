@@ -35,5 +35,7 @@ end
 Mod.rounddown = function(x)
     return math.floor(x)
 end
-
+Mod.abs = function(x)
+    return math.abs(x)
+end
 return Mod

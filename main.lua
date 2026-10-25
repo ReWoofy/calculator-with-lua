@@ -1,1 +1,2 @@
-local mod = require("module")
+local mod = require("basic module")
+
