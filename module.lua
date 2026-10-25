@@ -26,5 +26,7 @@ end
 Mod.power = function(x, y)
     return x ^ y
 end
-
+Mod.sqrt = function(x)
+    return math.sqrt(x)
+end
 return Mod
